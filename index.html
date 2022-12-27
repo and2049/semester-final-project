@@ -7,35 +7,34 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Josefin Sans", sans-serif}
+h1,h2,h3,h4,h5 {font-family: "Josefin Sans", sans-serif}
 body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;cursor:pointer}
 </style>
 </head>
 <body>
 
-<!--Sidebar-->
-<nav class="sidebar qatar-red w3-collapse w3-top w3-large padding" style="z-index:3;width:250px;font-weight:bold;" id="mySidebar"><br>
+<!-- Sidebar -->
+<nav class="sidebar qatar-red top padding" style="z-index:3;width:250px;font-weight:bold;" id="mySidebar"><br>
   <div class="container">
 		<img src="images/icons/icon_128.png" alt="Qatar Icon">
     <h3 class="padding-sbheader"><b>Fifa World Cup</b></h3>
 		
   </div>
-  <div class="w3-bar-block">
-    <a href="#home" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#group" class="w3-bar-item w3-button w3-hover-white">Group Stages</a> 
-    <a href="#ro6" class="w3-bar-item w3-button w3-hover-white">RO16</a> 
-    <a href="#matches" class="w3-bar-item w3-button w3-hover-white">Matches</a> 
-    <a href="#stats" class="w3-bar-item w3-button w3-hover-white">Stats</a> 
+  <div class="block">
+    <a href="#home" class="bar-item button hover-white">Home</a> 
+    <a href="#group" class="bar-item button hover-white">Group Stages</a> 
+    <a href="#ro6" class="bar-item button hover-white">RO16</a> 
+    <a href="#matches" class="bar-item button hover-white">Matches</a> 
+    <a href="/stats page/stats.html" target = "_blank" class="bar-item button hover-white">Stats</a> 
   </div>
 </nav>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
+<!-- page content margins -->
+<div class="main" style="margin-left:340px;margin-right:40px">
 
   <!-- Header -->
   <div class="container" style="margin-top:80px" id="home">
-    <h1 class="w3-jumbo"> <img src="images/title_left.png" alt="logo" /></h1>
+    <h1 class="header"> <img src="images/title_left.png" alt="logo" /></h1>
 		
 		<br>
 		<br>
@@ -44,121 +43,118 @@ body {font-size:16px;}
 		<br>
 		<br>
 		
-    <h1 class="w3-xxxlarge w3-text-red"><b>Gallery</b></h1>
+    <h1 class="xxl"><b>Gallery</b></h1>
   </div>
 	
   <!-- Photo Gallery -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="images/gallery/home_1.png" style="width:100%" onclick="onClick(this)" alt="Vini, Raphinia, Paquetá, and Neymar celebrate, Brazil vs Korea, Dec 5th 2022">
-			
-      <img src="images/gallery/home_2.png" style="width:100%" onclick="onClick(this)" alt="Ramos celebrates with Pepe, Portugal vs Switzerland, Dec 6th 2022">
-			
-      <img src="images/gallery/home_3.png" style="width:100%" onclick="onClick(this)" alt="France vs England, Dec 10th 2022">
+  <div class="row-padding">
+    <div class="half">
+      <img src="images/gallery/home_1.png" class = "padding-gal" style="width:100%" onclick="onClick(this)" alt="Vini, Raphinia, Paquetá, and Neymar celebrate, Brazil vs Korea, Dec 5th 2022">
+      <img src="images/gallery/home_2.png" class = "padding-gal" style="width:100%" onclick="onClick(this)" alt="Ramos celebrates with Pepe, Portugal vs Switzerland, Dec 6th 2022">	
+      <img src="images/gallery/home_3.png" class = "padding-gal" style="width:100%" onclick="onClick(this)" alt="France vs England, Dec 10th 2022">
     </div>
 
-    <div class="w3-half">
-      <img src="images/gallery/home_4.png" style="width:100%" onclick="onClick(this)" alt="Richarlison scores a bicycle kick, Brazil vs Serbia, Nov 24th 2022">
-			
-      <img src="images/gallery/home_5.png" style="width:100%" onclick="onClick(this)" alt="Argentina and Netherlands fighting, Dec 9th 2022">
-      <img src="images/gallery/home_6.png" style="width:100%" onclick="onClick(this)" alt="Tyler Adams seen after a loss, USA vs Netherlands, Dec 3rd 2022">
+    <div class="half">
+      <img src="images/gallery/home_4.png" class = "padding-gal" style="width:100%" onclick="onClick(this)" alt="Richarlison scores a bicycle kick, Brazil vs Serbia, Nov 24th 2022">
+      <img src="images/gallery/home_5.png" class = "padding-gal" style="width:100%" onclick="onClick(this)" alt="Argentina and Netherlands fighting, Dec 9th 2022">
+      <img src="images/gallery/home_6.png" class = "padding-gal" style="width:100%" onclick="onClick(this)" alt="Tyler Adams seen after a loss, USA vs Netherlands, Dec 3rd 2022">
     </div>
   </div>
 
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent padding-img">
-      <img id="img01" class="w3-image">
+  <!-- Opens images on click-->
+  <div id="modal01" class="modal black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="button black display-topright">×</span>
+    <div class="modal-content center transparent padding-img">
+      <img id="img01" class="image">
       <p id="caption"></p>
     </div>
   </div>
 
 <!-- Group Stages -->
   <div class="container" id="group" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Group Stages</b></h1>
+    <h1 class="xxl"><b>Group Stages</b></h1>
 	  <!-- Groups -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m5 w3-margin-bottom">
+  <div class="row-padding">
+    <div class="col margin-bottom">
       <div class="light-grey">
         <div class="container">
           <h3>Group A</h3>
-          <p class="w3-opacity">Top 2 Advanced</p>
-          <p>TEAM 1 </br> TEAM 2 </br> TEAM 3 </br> TEAM 4</p>
+          <p class="opacity">Top 2 Advanced</p>
+          <p> Netherlands </br> Senegal </br> Ecuador </br> Qatar</p>
         </div>
       </div>
     </div>
-    <div class="w3-col m5 w3-margin-bottom">
+    <div class="col margin-bottom">
       <div class="light-grey">
         <div class="container">
 					
          <h3>Group B</h3>
-          <p class="w3-opacity">Top 2 Advanced</p>
-          <p>TEAM 1 </br> TEAM 2 </br> TEAM 3 </br> TEAM 4</p>
+          <p class="opacity">Top 2 Advanced</p>
+          <p>England </br> USA </br> Iran </br> Wales</p>
         </div>
       </div>
     </div>
-    <div class="w3-col m5 w3-margin-bottom">
+    <div class="col margin-bottom">
       <div class="light-grey">
         <div class="container">
 					
           <h3>Group C</h3>
-          <p class="w3-opacity">Top 2 Advanced</p>
-          <p>TEAM 1 </br> TEAM 2 </br> TEAM 3 </br> TEAM 4</p>
+          <p class="opacity">Top 2 Advanced</p>
+          <p>Argentina </br> Poland </br> Mexico </br> Saudi Arabia</p>
         </div>
       </div>
     </div>
-    <div class="w3-col m5 w3-margin-bottom">
+    <div class="col margin-bottom">
       <div class="light-grey">
         <div class="container">
 					
           <h3>Group D</h3>
-          <p class="w3-opacity">Top 2 Advanced</p>
-          <p>TEAM 1 </br> TEAM 2 </br> TEAM 3 </br> TEAM 4</p>
+          <p class="opacity">Top 2 Advanced</p>
+          <p>France </br> Australia </br> Tunisia </br> Denmark</p>
         </div>
       </div>
     </div>
-    <div class="w3-col m5 w3-margin-bottom">
+    <div class="col margin-bottom">
       <div class="light-grey">
         <div class="container">
 
 					<h3>Group E</h3>
-          <p class="w3-opacity">Top 2 Advanced</p>
-          <p>TEAM 1 </br> TEAM 2 </br> TEAM 3 </br> TEAM 4</p>
+          <p class="opacity">Top 2 Advanced</p>
+          <p>Japan </br> Spain </br> Germany </br> Costa Rica</p>
         </div>
       </div>
     </div>
-    <div class="w3-col m5 w3-margin-bottom">
+    <div class="col margin-bottom">
       <div class="light-grey">
         <div class="container">
 
 					<h3>Group F</h3>
-          <p class="w3-opacity">Top 2 Advanced</p>
-          <p>TEAM 1 </br> TEAM 2 </br> TEAM 3 </br> TEAM 4</p>
+          <p class="opacity">Top 2 Advanced</p>
+          <p>Morocco </br> Croatia </br> Belgium </br> Canada</p>
         </div>
       </div>
     </div>
-    <div class="w3-col m5 w3-margin-bottom">
+    <div class="col margin-bottom">
       <div class="light-grey">
         <div class="container">
 
 					<h3>Group G</h3>
-          <p class="w3-opacity">Top 2 Advanced</p>
-          <p>TEAM 1 </br> TEAM 2 </br> TEAM 3 </br> TEAM 4</p>
+          <p class="opacity">Top 2 Advanced</p>
+          <p>Brazil </br> Switzerland </br> Cameroon </br> Serbia</p>
         </div>
       </div>
     </div>
-    <div class="w3-col m5 w3-margin-bottom">
+    <div class="col margin-bottom">
       <div class="light-grey">
         <div class="container">
 
 					<h3>Group H</h3>
-          <p class="w3-opacity">Top 2 Advanced</p>
-          <p>TEAM 1 </br> TEAM 2 </br> TEAM 3 </br> TEAM 4</p>
+          <p class="opacity">Top 2 Advanced</p>
+          <p>Portugal </br> South Korea </br> Uruguay </br> Ghana</p>
         </div>
       </div>
     </div>
-    <div class="w3-col m5 w3-margin-bottom">
+    <div class="col margin-bottom">
         <div class="container">
 					
         </div>
@@ -166,63 +162,46 @@ body {font-size:16px;}
     </div>
   </div>
 
+  <div class="container" style="margin-top:75px">
+    <h1 class="xxl"><b> </b></h1>
+		
   <!-- Round of 16 -->
+	 <div class="container" style="margin-top:75px">
+    <h1 class="xxl"><b>Round of 16</b></h1>
+		 
   <div class="container" id="ro6" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Round of 16</b></h1>
-    <p>The best team in the world.</p>
-    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <p><b>Our designers are thoughtfully chosen</b>:</p>
-  </div>
+    <h1 class="xxl"><b>Bracket</b></h1>
+		<img src="images/bracket.png" style="width:85%"
 
-  <!-- Packages / Pricing Tables -->
-  <div class="container" id="matches" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Matches</b></h1>
-    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
-  </div>
 
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <ul class="w3-ul light-grey w3-center">
-        <li class="w3-dark-grey w3-xlarge padding-32">Basic</li>
-        <li class="padding-16">Floorplanning</li>
-        <li class="padding-16">10 hours support</li>
-        <li class="padding-16">Photography</li>
-        <li class="padding-16">20% furniture discount</li>
-        <li class="padding-16">Good deals</li>
-        <li class="padding-16">
-          <h2>$ 199</h2>
-          <span class="w3-opacity">per room</span>
-        </li>
-        <li class="light-grey padding-24">
-          <button class="w3-button w3-white padding-large w3-hover-black">Sign Up</button>
-        </li>
-      </ul>
+  <!-- Matches -->
+ <div class="container" id="matches" style="margin-top:75px">
+    <h1 class="xxl"><b>Matches</b></h1>
+	  <!-- Groups -->
+  <div class="row-padding">
+    <div class="col m5 margin-bottom">
+      <div class="light-grey">
+        <div class="container">
+          <h3> 
+						<a href="https://www.foxsports.com/soccer/fifa-world-cup-men-argentina-vs-france-dec-18-2022-game-boxscore-97096" target = "_blank" class=" padding-16 button hover-white">Final</a>			
+				 </br> 
+						<a href="https://www.foxsports.com/soccer/fifa-world-cup-men-argentina-vs-croatia-dec-13-2022-game-boxscore-97095" target = "_blank" class=" padding-16 button hover-white">Semi-Final 1</a>
+					</br> 
+						<a href="https://www.foxsports.com/soccer/fifa-world-cup-men-france-vs-morocco-dec-14-2022-game-boxscore-97064" target = "_blank" class=" padding-16 button hover-white">Semi-Final 2</a>
+        </div>
+      </div>
     </div>
-        
-    <div class="w3-half">
-      <ul class="w3-ul light-grey w3-center">
-        <li class="qatar-red w3-xlarge padding-32">Pro</li>
-        <li class="padding-16">Floorplanning</li>
-        <li class="padding-16">50 hours support</li>
-        <li class="padding-16">Photography</li>
-        <li class="padding-16">50% furniture discount</li>
-        <li class="padding-16">GREAT deals</li>
-        <li class="padding-16">
-          <h2>$ 249</h2>
-          <span class="w3-opacity">per room</span>
-        </li>
-        <li class="light-grey padding-24">
-          <button class="w3-button qatar-red padding-large w3-hover-black">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-  </div>
+    <div class="col margin-bottom">
 
+<!-- Display form submission status -->
+<div class="status"></div>
+
+<!-- Subscription form -->
+<form action="#" id="subsFrm" method="post">
+    <input type="text" id="name" placeholder="Name" required="">
+    <input type="email" id="email" placeholder="E-mail" required="">
+    <input type="button" id="subscribeBtn" value="Subscribe Now">
+</form>
+		
 <!-- External Javascript -->
-<script src="script.js"></script>
-
-</body>
-</html>
+	<script type="text/javascript" src="script.js"></script>
