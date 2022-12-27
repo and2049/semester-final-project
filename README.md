@@ -1,5 +1,5 @@
 (view raw)
-Con.php left blank
+_con.php left blank and needs to be renamed to con.php
 
 MySQL Table:
 
