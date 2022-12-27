@@ -1,4 +1,6 @@
+Con.php left blank
 
+MySQL Table:
 
 CREATE TABLE `subscribe` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
